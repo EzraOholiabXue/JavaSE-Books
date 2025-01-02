@@ -1,28 +1,26 @@
+package org.corejava.v2ch12.employee;
+
 /**
- * @version 1.10 1999-11-13
  * @author Cay Horstmann
+ * @version 1.10 1999-11-13
  */
 
-public class Employee
-{
-   private String name;
-   private double salary;
+public class Employee {
+    private String name;
+    private double salary;
 
-   public native void raiseSalary(double byPercent);
+    public native void raiseSalary(double byPercent);
 
-   public Employee(String n, double s)
-   {
-      name = n;
-      salary = s;
-   }
+    public Employee(String n, double s) {
+        name = n;
+        salary = s;
+    }
 
-   public void print()
-   {
-      System.out.println(name + " " + salary);
-   }
+    public void print() {
+        System.out.println(name + " " + salary);
+    }
 
-   static
-   {
-      System.loadLibrary("Employee");
-   }
+    static {
+        System.loadLibrary("Employee");
+    }
 }
