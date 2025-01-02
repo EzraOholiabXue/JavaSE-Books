@@ -1,4 +1,4 @@
-package genericAlgorithms;
+package org.corejava.v1ch08.genericAlgorithms;
 
 import java.util.function.Supplier;
 

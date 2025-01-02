@@ -1,12 +1,11 @@
 package org.corejava.v2ch04.mail;
 
-import com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException;
-
-import javax.mail.*;
-import javax.mail.internet.*;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMessage.RecipientType;
 import java.io.Console;
-import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -21,7 +20,7 @@ import java.util.Properties;
  * @version 1.00 2012-06-04
  */
 public class MailTest {
-    public static void main(String[] args) throws MessagingException, IOException {
+    public static void main(String[] args) throws Exception {
         Properties props = new Properties();
         try (InputStream in = Files.newInputStream(Paths.get("mail", "mail.properties"))) {
             props.load(in);

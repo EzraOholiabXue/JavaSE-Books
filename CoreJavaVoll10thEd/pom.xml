@@ -14,4 +14,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- 其他依赖... -->
+
+        <!-- JavaMail (Jakarta Mail) -->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>jakarta.mail</artifactId>
+            <version>1.6.7</version>
+        </dependency>
+    </dependencies>
+
+
 </project>
