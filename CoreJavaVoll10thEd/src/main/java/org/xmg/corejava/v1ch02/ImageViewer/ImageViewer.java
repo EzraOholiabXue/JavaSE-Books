@@ -1,4 +1,4 @@
-package org.corejava.v1ch02.ImageViewer;
+package org.xmg.corejava.v1ch02.ImageViewer;
 
 import javax.swing.*;
 import java.awt.*;
