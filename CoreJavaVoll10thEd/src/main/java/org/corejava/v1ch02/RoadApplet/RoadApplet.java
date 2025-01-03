@@ -3,6 +3,7 @@ package org.corejava.v1ch02.RoadApplet;
 import javax.swing.*;
 import java.awt.*;
 
+
 public class RoadApplet extends JApplet {
     private RoadComponent roadComponent;
     private JSlider slowdown;
